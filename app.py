@@ -6,7 +6,7 @@ import plotly.express as px
 st.set_page_config(page_title="Explorateur 3D", page_icon="🌌", layout="wide")
 
 st.title("🌌 Explorateur 3D de l'Univers")
-st.markdown("**Instructions pour le jury :** Tournez le graphique avec votre doigt ou votre souris. Zoomez pour explorer le nuage de points et cliquez sur une planète pour voir ses caractéristiques !")
+st.markdown("Tournez le graphique avec votre doigt ou votre souris. Zoomez pour explorer le nuage de points et cliquez sur une planète pour voir ses caractéristiques !")
 
 # 2. Chargement et nettoyage des données
 @st.cache_data
@@ -68,6 +68,3 @@ fig.update_layout(
 
 # 6. Affichage sur le site Web
 st.plotly_chart(fig, use_container_width=True)
-
-st.write("---")
-st.write("✨ *Projet de Data Science réalisé en L1*")
